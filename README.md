@@ -1,4 +1,4 @@
-﻿# AurumCenter
+# AurumCenter
 
 A jewellery ecommerce application with a React storefront and a Django backend for catalogue, account, and order features.
 
@@ -28,3 +28,8 @@ python manage.py runserver
 ```
 
 The backend currently has no dependency manifest; add any further Python packages required by your local setup to a requirements file. Keep private configuration out of source control.
+
+
+## Django secret key
+
+Set DJANGO_SECRET_KEY in the environment before starting the backend. Generate a local key with python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())". The settings fallback is for local development only; configure your own key for deployments.
