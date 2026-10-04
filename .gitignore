@@ -1,0 +1,45 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local databases and generated files
+*.sqlite3
+*.db
+media/
+staticfiles/
+
+# Node and frontend output
+**/node_modules/
+frontend/dist/
+frontend/build/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Publishing safety: local credentials, keys, and machine databases
+# Publishing safety: local credentials, keys, and machine databases
+**/.env
+**/.env.*
+!**/.env.example
+*.p12
+*.pfx
+*.sqlite
+*.dump
+*.bak
+myvenv/
+**/myvenv/
